@@ -1,0 +1,53 @@
+.inputContainer {
+    position: relative;
+    font-size: 17px;
+    padding: 0.25rem 0;
+}
+
+.inputContainer .label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0 10px;
+    transition: .1s linear;
+    pointer-events: none;
+}
+
+.inputContainer .non-focused-calendar-dark,
+.inputContainer .non-focused-calendar-light {
+    background-color: rgb(88, 88, 88);
+}
+
+.inputContainer .label-date {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: #fff; */
+    padding: 0 10px;
+    font-size: 17px;
+    transition: .1s linear;
+    pointer-events: none;
+}
+
+
+.inputContainer .label.label-focused,
+.inputContainer .label-date.label-focused {
+    top: 6%;
+    font-size: 15px;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: #fb923c;
+    ;
+}
+
+
+
+.inputContainer .label.label-focused.darkMode,
+.inputContainer .label-date.label-focused.darkMode {
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #444 50%, rgb(88, 88, 88) 50%) !important;
+    color: #EC783D !important;
+}

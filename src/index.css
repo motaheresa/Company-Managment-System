@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: red;
+  --sb-track-color: #a2360a;
+  --sb-thumb-color: rgb(239, 111, 36);
+  --sb-size: 12px;
+}
+
+
+/*  Progresbar  */
+progress[value]::-webkit-progress-value {
+  background-image:
+    -webkit-linear-gradient(left, rgb(239, 111, 36), rgb(239, 111, 36));
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+
+/*                  Scroll Bar Start                    */
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 49px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 49px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+/*                  Scroll Bar End                    */
+
+
+/*                 Multible Selection                  */
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10px 10px 15px 10px !important;
+}
+/*                End Multible Selection              */
+
+
+/*                  Table Attendance Styling Status   */
+
+
+
+.lateTable {
+  background-color: #e3b113;
+  color: #fff !important;
+}
+
+.absentTable {
+  background-color: #f7284a;
+  color: #fff !important;
+}
+
+.weekendTable {
+  background-color: #EC783D;
+  color: #fff !important;
+}
+
+.presentTable {
+  background-color: #0caf55da;
+  color: #fff !important;
+}
+
+.workHomeTable {
+  background-color: rgba(28, 202, 245, 0.781);
+  color: #fff !important;
+}
+
+.publicHolidayTable {
+  background-color: #1db9e0;
+  color: #fff !important;
+}
+
+/*                 Table Attendance Styling Status      */
+
+/*                  Employee  Styling Start             */
+
+.table_emp_dark {
+  --bs-table-bg: transparent !important;
+  border-color: black;
+}
+
+.table_emp tr td {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 6px 8px;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 100px;
+}
+
+.table_emp.table_emp_dark tr td {
+  border-color: #52525b;
+  color: #fff;
+}
+
+
+/*                  Employee Styling Ends                  */
+
+
+label {
+  letter-spacing: 0.5px;
+  font-size: 17px;
+}
+
+
+.OriginalColor {
+  color: #EC783D !important;
+}
+
+.OriginalBackground {
+  background-color: rgb(236, 120, 61) !important;
+}
+
+.lightgrayColor {
+  color: #8C8C8C !important;
+}
+
+.lightgrayBackgroundColor {
+  background-color: #8C8C8C !important;
+}
+
+.darkgrayBackgroundColor {
+  background-color: #4D4D4D !important;
+}
+
+.borderBackgroundHover {
+  background-color: rgb(236, 120, 61) !important;
+  transition: .2s linear;
+}
+
+.borderBackgroundHover:hover {
+  background-color: transparent !important;
+  transition: .2s linear;
+  color: #EC783D !important;
+  outline: 1px solid #ec783d !important;
+  /* border-collapse: collapse; */
+  background-color: rgb(222, 222, 222);
+}
+
+.borderBackground {
+  background-color: transparent !important;
+  transition: .2s linear;
+  color: #EC783D !important;
+  border: 1px solid #EC783D !important;
+}
+
+
+.borderBackground:hover {
+  background-color: rgb(236, 120, 61) !important;
+  transition: .2s linear;
+  color: #fff !important;
+}
+
+
+
+.darkgrayColor {
+  color: #4D4D4D !important;
+}
+
+.BlueDark {
+  color: #263871 !important;
+}
+
+
+
+.ClockinBtn {
+  background-color: rgb(111, 217, 67);
+  transition: .2s linear;
+}
+
+.hoverColorLight:hover {
+  color: #fff !important;
+  background-color: #f9aa83 !important;
+}
+
+
+
+.ClockinBtn:hover {
+  color: #6FD943 !important;
+  background-color: transparent;
+  border: 1px solid #6FD943;
+}
+
+.ClockoutBtn {
+  background-color: rgb(255, 127, 161);
+  transition: .2s linear;
+}
+
+.ClockoutBtn:hover {
+  color: #FF7FA1 !important;
+  background-color: transparent;
+  border: 1px solid #FF7FA1;
+}
+
+.NoOutlines {
+  border: none !important;
+  outline: none !important;
+}
+
+body {
+  overflow-x: hidden;
+  padding-bottom: 0 !important;
+}
+
+
+
+.publicHolidayTable {
+  background-color: #1db9e0;
+  color: #fff !important;
+}
+
+td,
+tr {
+  border-collapse: collapse;
+}
+
+/* Light Mode */
+
+
+.LightThemeContainer {
+  background-color: #fff;
+}
+
+.borderLightContainer {
+  border: 1px solid rgb(232, 234, 235) !important;
+}
+
+/* Dark Mode */
+
+.darkContainer {
+  background-color: rgb(44, 47, 51) !important;
+}
+
+.darkMainColor {
+  color: #fff;
+  fill: #fff;
+}
+
+.borderDarkContainer {
+  border: 1px solid rgb(78, 80, 83) !important;
+}
+
+.borderDarkLine {
+  border-color: rgb(86, 87, 88);
+}
+
+.darkmodeBody {
+  background-color: #23272B !important;
+}
+
+.xmarkBorder {
+  border: 1px solid white;
+  color: white;
+}
+
+.xmarkBorder:hover {
+  border: 1px solid rgb(255, 58, 58);
+  color: rgb(255, 58, 58);
+}
+
+.inputDark {
+  background-color: rgb(88, 88, 88) !important;
+  border: none !important;
+  outline: none !important;
+  color: white !important;
+}
+
+.inputDark::placeholder {
+  color: white !important;
+}
+
+.darkHidingContainer {
+  background-color: #444;
+  border: 1px solid #777;
+}
+
+.placeholderDark::placeholder {
+  color: #b5b5b5 !important;
+}
+
+
+.backHolidayElementsContainer {
+  background-color: rgb(236, 120, 61) !important;
+}
+
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}

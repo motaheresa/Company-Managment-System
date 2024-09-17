@@ -1,0 +1,28 @@
+.CalenderAddTask{
+    background-color: rgba(159, 157, 157, 0.4);
+    z-index: 90000000;
+}
+
+.ShowAddCalenderTask{
+    visibility: visible;
+    opacity: 1;
+    transition: .4s linear;
+    /* transform: translateY(0); */
+    /* z-index: 100; */
+}
+
+.HideAddCalenderTask{
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s linear;
+    /* transform: translateY(-1000px); */
+}
+
+
+.colorInput{
+    color: #fff !important;
+    border-color: white !important;
+}
+
+
+

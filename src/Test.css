@@ -1,0 +1,50 @@
+#SvgjsPath1156:hover {
+    opacity: .6;
+}
+
+#SvgjsPath1158:hover {
+    opacity: .6;
+}
+
+#SvgjsPath1160:hover {
+    opacity: .6;
+}
+
+#SvgjsPath1162:hover {
+    opacity: .6;
+}
+
+.over {
+    background-color: red !important;
+    z-index: 10;
+}
+
+.BlueBackToolTip {
+    background-color: rgba(51, 102, 255, 1);
+}
+
+.RedBackToolTip {
+    background-color: rgba(247,40,74,1);
+}
+
+.OrangeBackToolTip {
+    background-color: rgba(254,127,0,1);
+}
+
+.GreenBackToolTip {
+    background-color: rgba(1,195,83,1);
+}
+
+
+.casualGraph{
+    fill: #3366ff !important;
+}
+.sickGraph{
+    fill: #f7284a !important;
+}
+.remainingGraph{
+    fill: #01c353 !important;
+}
+.annualGraph{
+    fill: #fe7f00 !important;
+}

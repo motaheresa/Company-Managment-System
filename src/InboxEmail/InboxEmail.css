@@ -1,0 +1,15 @@
+.emailBefore{
+    position: relative;
+}
+
+.emailBefore::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    background-color: rgb(236, 120, 61) !important;
+    border-radius: 50%;
+}

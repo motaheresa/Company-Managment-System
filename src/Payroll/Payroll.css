@@ -1,0 +1,32 @@
+.activePage {
+    position: relative;
+    transition: .3s linear;
+}
+
+.activePage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 105%;
+    transition: .3s linear;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(236, 120, 61);
+    border-radius: 10px;
+}
+
+.PayrollLinksHover{
+    position: relative;
+}
+
+.PayrollLinksHover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 105%;
+    transition: .3s linear;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(236, 120, 61);
+    border-radius: 10px;
+}

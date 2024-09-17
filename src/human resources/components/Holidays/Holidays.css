@@ -1,0 +1,72 @@
+.red-bg-holi{
+    background-color: rgba(254, 84, 212, 0.7) ;
+}
+.red-cl-holi{
+    color: rgba(254, 84, 212, 0.6) ;
+}
+
+.blue-bg-holi{
+    background-color: rgba(66, 254, 113, 0.7) ;
+    
+}
+.blue-cl-holi{
+    color: rgba(66, 254, 113, 0.6) ;
+}
+
+.green-bg-holi{
+    background-color: rgba(73, 156, 250, 0.7) ;
+    
+}
+.green-cl-holi{
+    color: rgba(73, 156, 250, 0.6) ;
+}
+
+.purple-bg-holi{
+    background-color: rgba(191, 255, 102, 0.7) ;   
+}
+.purple-cl-holi{
+    color: rgba(191, 255, 102, 0.6) ;   
+}
+
+.pink-bg-holi{
+    background-color: rgba(200, 101, 101, 0.7) ;   
+}
+.pink-cl-holi{
+    color: rgba(200, 101, 101, 0.6) ;   
+}
+
+.indigo-bg-holi{
+    background-color: rgba(255, 111, 192, 0.7) ;     
+}
+.indigo-cl-holi{
+    color: rgba(255, 111, 192, 0.6) ;   
+}
+
+.teal-bg-holi{
+    background-color: rgba(36, 43, 86, 0.7) ;   
+}
+.teal-cl-holi{   
+    color: rgba(36, 43, 86, 0.6) ;   
+}
+
+.orange-bg-holi{
+    background-color: rgba(28, 127, 68, 0.7) ;     
+}
+.orange-cl-holi{   
+    color: rgba(28, 127, 68, 0.6) ;   
+}
+
+.cyan-bg-holi{
+    background-color: rgba(81, 228, 236, 0.7) ; 
+}
+.cyan-cl-holi{
+    color: rgba(81, 228, 236, 0.6) ; 
+}
+
+.blue-bg-holi{
+    background-color: rgba(236, 228, 81, 0.7) ;  
+}
+
+.blue-cl-holi{
+    color: rgba(236, 228, 81, 0.6) ;  
+}

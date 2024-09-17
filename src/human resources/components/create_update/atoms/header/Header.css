@@ -1,0 +1,36 @@
+.style_btn1_hr,
+.style_btn2_hr{
+    background-color: #575757;
+    padding: 6px 12px;
+    color: white;
+    transition: .2s linear;
+  }
+
+  .style_btn2_hr{
+    background-color: #fbf0eb ;
+    color: #818080 ;
+  }
+  
+  .style_btn1_hr:hover{
+    background-color: #EC783D;
+    color: #EC783D;
+  }
+
+  .style_btn1_hr_fixed{
+    background-color: #fdb590;
+    border-bottom: 5px #EC783D solid;
+    color: white;
+    transition: .2s linear;
+  }
+
+  .style_btn2_hr_fixed{
+    background-color: #EC783D;
+    padding: 6px 12px;
+    color: #fff;
+    transition: .2s linear;
+  }
+  .style_btn2_hr:hover{
+    background-color: #EC783D !important;
+    color: #fff;
+  }
+  

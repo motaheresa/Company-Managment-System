@@ -1,0 +1,37 @@
+.borderColorOriginal {
+    border: 1px solid #EC783D;
+    transition: .2s linear;
+}
+
+.borderColorOriginal:hover {
+    background-color: #EC783D;
+    color: white !important;
+}
+
+.borderColorOriginal:hover>* {
+    color: white !important;
+}
+
+.borderColorOriginal:hover input::placeholder {
+    color: white !important;
+}
+
+.NavMail {
+    font-size: 25px !important;
+}
+
+.attendencewidthholidays {
+    width: 99% !important;
+}
+
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding-right: 32px;
+    padding: 9px;
+    
+}
+.AttendanceFileDownloadBackground{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+

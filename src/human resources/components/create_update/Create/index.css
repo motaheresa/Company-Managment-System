@@ -1,0 +1,42 @@
+.style_btn1{
+  background-color: #EC783D;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  border: 1.5px solid #EC783D;
+  transition: .2s linear;
+}
+
+.style_btn1:hover{
+  background-color: transparent;
+  color: #EC783D;
+}
+.style_btn2{
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #000;
+  border: 1.5px solid #EC783D;
+  transition: .2s linear;
+}
+
+.style_btn2:hover{
+  background-color: #EC783D;
+  color: #fff;
+}
+.style_btn1_fixed{
+  background-color: #EC783D;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  border: 1.5px solid #EC783D;
+  transition: .2s linear;
+}
+.style_btn2_fixed{
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #000;
+  border: 1.5px solid #EC783D;
+  transition: .2s linear;
+}

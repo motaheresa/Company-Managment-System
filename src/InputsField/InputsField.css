@@ -1,0 +1,16 @@
+.password-input-container {
+    position: relative;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}

@@ -1,0 +1,14 @@
+.counters-hr-dashboard > div{
+    position: relative;
+}
+
+.counters-hr-dashboard > div:not(:last-child):after{
+    content: "";
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(220, 220, 220);
+    width: 0.1rem !important;
+    height: 100px;
+}

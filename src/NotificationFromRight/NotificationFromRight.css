@@ -1,0 +1,19 @@
+.NotificationCloseMark:hover{
+    background-color: rgb(236, 120, 61) !important;
+    color: #fff !important;
+}
+
+.HideNotificationNav{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(600px);
+    transition: .4s linear;
+}
+
+.ShowNotificationNav{
+    visibility: visible;
+    opacity: 1;
+    z-index: 100000;
+    transform: translateX(0);
+    transition: .4s linear;
+}

@@ -1,0 +1,176 @@
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+    padding: 0 !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content {
+    margin: 0 !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
+    box-shadow: none !important;
+}
+
+/* 
+.css-i4bv87-MuiSvgIcon-root{
+    color: #EC783D !important;
+} */
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper svg {
+    /* margin-right: 10px; */
+    color: #EC783D !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root:hover {
+    background-color: #EC783D !important;
+}
+
+.ReportChildrenHoverColor:hover {
+    background-color: #EC783D !important;
+}
+
+.ReportChildrenHoverColor:hover .internal-color-sidebar-children {
+    color: #fff !important;
+}
+
+.ReportHoverColor:hover {
+    background-color: #EC783D !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type :hover .internal-color-sidebar {
+    color: #fff !important;
+}
+
+.settingHover:hover .arrow {
+    color: #fff !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type:hover .MuiAccordionDetails-root {
+    /* background-color: #fff !important; */
+    box-shadow: none;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type {
+    padding: 0 5px !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    margin-right: 5px;
+    transform: rotate(90deg) !important;
+    box-shadow: none;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded,
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+    padding: 0 4px !important;
+    border-radius: 10px !important;
+}
+
+
+.icon {
+    box-shadow: 1px 2px 3px #b7b1b1;
+}
+
+.hoverColor:hover {
+    background-color: #EC783D !important;
+}
+
+.hoverColor:hover div,
+.dasharrow {
+    color: #fff !important;
+}
+
+.arrow {
+    transition: .2s linear;
+}
+
+.hoverColor {
+    cursor: pointer;
+}
+
+.hoverColor:hover .arrow {
+    transform: rotate(90deg);
+    transition: .2s linear;
+}
+
+.SideSec {
+    width: 320px !important;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    transition: .3s linear;
+    overflow: auto;
+}
+
+.SideSec.active{
+    width: 60px !important;
+    overflow: hidden;
+}
+
+.toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(236, 120, 61) !important;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.toggle::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    transform: translateY(5px);
+    transition: 1s;
+}
+
+.SideSec.active .toggle::before{
+    transform: translateY(0px) rotate(-405deg);
+}
+.SideSec.active .toggle::after{
+    transform: translateY(0px) rotate(225deg);
+}
+
+.SettingsListSideBar {
+    list-style: circle !important;
+}
+
+.resetPasswordSideBar {
+    transition: .3s linear;
+}
+
+.resetPasswordSideBar:hover {
+    list-style: none !important;
+    color: rgb(104, 101, 101) !important;
+    cursor: pointer;
+}
+
+.bg-icon-sidebar {
+    background-color: rgb(236, 120, 61) !important;
+}

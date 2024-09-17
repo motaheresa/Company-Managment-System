@@ -1,0 +1,43 @@
+.login {
+    width: 30%;
+    z-index: 10;
+    margin: auto;
+    height: fit-content;
+    position: relative;
+    /* transform: translateY(100px); */
+    padding: 60px 20px 50px 20px;
+}
+
+.spanForget {
+    font-size: 13px;
+    color: gray;
+}
+
+.spanLogin {
+    color: rgb(255, 193, 7);
+    font-weight: 600;
+    letter-spacing: 0;
+    transition: .2s linear;
+    text-shadow: 1px 2px 3px  rgb(255, 226, 7) ,
+    2px 3px 5px  rgb(255, 226, 7) ;
+
+}
+
+.LabelLogin{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.login2-sec input:focus{
+    outline: 2px solid rgb(255, 193, 7) !important;
+    border: 2px solid rgb(255, 193, 7) !important;
+}
+
+.LoginBtns{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.btnLogin{
+
+}

@@ -1,0 +1,38 @@
+.calenderPage {
+    width: 99% !important;
+}
+
+/* .CalenderTable{
+    width: 97% !important;
+} */
+
+.rbc-btn-group button {
+    color: #EC783D !important;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+    color: #EC783D !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.rbc-day-bg.rbc-today {
+    background-color: rgb(223, 208, 208);
+}
+
+.rbc-date-cell.rbc-now {
+    color: #EC783D;
+}
+
+.rbc-month-view.bgcalenderDark {
+    background-color: rgb(84, 84, 84);
+}
+
+.rbc-off-range-bg{
+    background-color: rgba(255, 120, 120, 0.26) !important;
+}
+
+.calenderWidth{
+    width: 98%;
+}

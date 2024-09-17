@@ -1,0 +1,22 @@
+.inboxemailbefore {
+    position: relative;
+}
+
+.inboxemailbefore::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(236, 120, 61) !important;
+    border-radius: 50%;
+}
+
+#basic-menu{
+    z-index: 100000 !important;
+}
+
+.asx{
+    z-index: 200000;
+}

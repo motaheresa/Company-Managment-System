@@ -1,0 +1,105 @@
+.sunColor {
+    color: #545b92;
+}
+
+.clockinNav {
+    border: 1px solid #EC783D !important;
+}
+
+.clockinNav:hover {
+    transition: .2s linear;
+    background-color: transparent !important;
+
+    color: #EC783D !important;
+}
+
+.borderColorOriginal {
+    border: 1px solid #EC783D;
+    transition: .2s linear;
+}
+
+.borderColorOriginal:hover {
+    background-color: #EC783D;
+    color: white !important;
+}
+
+.borderDarkModeInoutHead{
+    border: 1px solid #EC783D;
+    cursor: default !important;
+}
+
+.borderColorOriginal:hover>* {
+    color: white !important;
+}
+
+.borderColorOriginal:hover input::placeholder {
+    color: white !important;
+}
+
+.EmailSizeNav {
+    font-size: 25px !important;
+}
+
+.EmailSizeNav::after {
+    content: "1";
+    right: 0;
+    font-size: 16px;
+    z-index: 13;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    background-color: white;
+    color: #EC783D;
+}
+
+.ShowProfileMenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+    transition: .3s linear;
+}
+
+.HideProfileMenu{
+    visibility: hidden;
+    height: 0;
+    transition: .3s linear;
+    display: none;
+    opacity: 0;
+    transform: translateY(-500px);
+}
+
+
+#popover-positioned-bottom{
+    /* width: 250px !important; */
+    /* background-color: red !important; */
+}
+.popoverProfile{
+    background-color:rgb(60, 60, 60) !important;
+}
+
+
+
+
+
+
+
+/* Dark Mode */
+
+
+/*  */
+
+.darkModeWel{
+    color: white;
+}
+
+.borderDarkMode{
+    border: 1px solid #666;
+}
+

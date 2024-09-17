@@ -1,0 +1,25 @@
+.itemHeaderHr {
+    background-color: rgba(255, 216, 196, 0.4);
+    transition: 0.3s linear;
+}
+
+.itemHeaderHr:hover {
+    background-color: orange;
+}
+
+.itemHeaderHr:hover {
+    background-color: orange;
+}
+
+.itemHeaderHr:hover svg {
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: 0.2s linear;
+    /* animation: move 1s ease-in-out infinite; */
+}
+
+.itemHeaderHr:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.2s linear;
+    
+}
+

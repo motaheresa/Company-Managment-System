@@ -1,0 +1,30 @@
+.pdf-download::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    transform: rotate(40deg);
+    transition: 0.3s;
+    width: 20px;
+    border-radius: 100%;
+    height: 2px;
+    background-color: #EC783D;
+}
+.pdf-download::after{
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    transform: rotate(-40deg);
+    transition: 0.3s;
+    width: 20px;
+    border-radius: 100%;
+    height: 2px;
+    background-color: #EC783D;
+}
+.pdf-download.to_bottom::before{
+    transform: rotate(180deg);
+}
+.pdf-download.to_bottom::after{
+    transform: rotate(180deg);
+}

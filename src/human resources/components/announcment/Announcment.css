@@ -1,0 +1,45 @@
+.shadow-animation {
+    animation-name: shadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 17px orange;
+    }
+
+    50% {
+        box-shadow: 0 0 17px rgb(142, 142, 142);
+    }
+
+    100% {
+        box-shadow: 0 0 17px orange;
+    }
+}
+
+.is_search_appearance_left,
+.is_search_appearance_right {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: 1s linear;
+}
+.is_search_appearance_left{
+    transform: translateX(-200px);
+}
+
+
+.is_search_appearance_right {
+    transform: translateX(200px);
+}
+
+
+.is_search_appearance_left.appeared,
+.is_search_appearance_right.appeared {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    height: fit-content;
+}

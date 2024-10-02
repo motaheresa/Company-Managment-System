@@ -13,7 +13,7 @@ const TodaysAbsent = () => {
   const keys = ["Userid", "Name", "daytypeData", "statusData"];
 
   useEffect(() => {
-    const url="http://localhost:3005/manager/today-absent"
+    const url="http://localhost:1813/manager/today-absent"
     axios
       .get(url, apiAuth(token))
       .then((res) => setUsers(res.data.data.employees));

@@ -30,7 +30,7 @@ const CreateAnnouncementHr = ({ isAppeared, handleAppearance,setData }) => {
     }
     console.log(updatedValues);
     axios
-      .post("http://localhost:3005/announcement", updatedValues, apiAuth(token))
+      .post("http://localhost:1813/announcement", updatedValues, apiAuth(token))
       .then((response) => {
         setData((prev)=>([...prev,response.data.data]))
         console.log(response.data.data);

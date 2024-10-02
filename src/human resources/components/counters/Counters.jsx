@@ -13,7 +13,7 @@ const Counters = () => {
   const [data, setData] = useState({});
   useEffect(() => {
       axios
-      .get("http://localhost:3005/user/counters", apiAuth(token))
+      .get("http://localhost:1813/user/counters", apiAuth(token))
       .then((response) => {
         setData(response.data.data);
       });

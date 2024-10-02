@@ -27,7 +27,7 @@ const ForgetPassword = () => {
     e.preventDefault();
     
     axios
-      .post("http://localhost:3005/auth/forgetPassword", {
+      .post("http://localhost:1813/auth/forgetPassword", {
         email:usecon.email,
       })
       .then((res) => {

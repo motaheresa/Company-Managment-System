@@ -23,7 +23,7 @@ const CalenderAddTask = ({ closeCalenderAddTask }) => {
         e.preventDefault()
         closeCalenderAddTask()
         window.location.reload()
-        axios.post("http://localhost:3005/dashboard/addEvent", {
+        axios.post("http://localhost:1813/dashboard/addEvent", {
             title,
             date,
             details,

@@ -19,7 +19,7 @@ const DashboardDetails = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3005/manager/leaves", {
+      .get("http://localhost:1813/manager/leaves", {
         headers: {
           Accept: "Application/json",
           Authorization: "Bearer " + token,
@@ -27,7 +27,7 @@ const DashboardDetails = () => {
       })
       .then((res) => setCounter((prev)=>({...prev,pending:res.data.data.pending})));
         axios
-          .get("http://localhost:3005/manager/today-absent", {
+          .get("http://localhost:1813/manager/today-absent", {
             headers: {
               Accept: "Application/json",
               Authorization: "Bearer " + token,
@@ -35,7 +35,7 @@ const DashboardDetails = () => {
           })
           .then((res) => setCounter((prev)=>({...prev,TodayAbsent:res.data.data.counter})));
           axios
-          .get("http://localhost:3005/manager/employees", {
+          .get("http://localhost:1813/manager/employees", {
             headers: {
               Accept: "Application/json",
               Authorization: "Bearer " + token,

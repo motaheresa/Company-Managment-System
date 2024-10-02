@@ -28,7 +28,7 @@ const Announcment = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:3005/announcement?${handleSearch()}`,
+        `http://localhost:1813/announcement?${handleSearch()}`,
         apiAuth(token)
       )
       .then((response) => {

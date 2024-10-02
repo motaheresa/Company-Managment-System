@@ -20,7 +20,7 @@ const DashboardDetails3 = () => {
         }
       });
     };
-    await fetch("http://localhost:3005/me/my-leaves", {
+    await fetch("http://localhost:1813/me/my-leaves", {
       headers: {
         Accept: "Application/json",
         Authorization: "Bearer " + token,

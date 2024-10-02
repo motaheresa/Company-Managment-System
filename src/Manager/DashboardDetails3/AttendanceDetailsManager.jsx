@@ -14,7 +14,7 @@ const AttendanceDetailsManager = () => {
   const [t, i18n] = useTranslation();
 
   useEffect(() => {
-    const url="http://localhost:3005/manager/attendance"
+    const url="http://localhost:1813/manager/attendance"
     axios
       .get(url, apiAuth(token))
       .then((res) => {

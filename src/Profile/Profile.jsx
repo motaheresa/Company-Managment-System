@@ -19,7 +19,7 @@ const Profile = ({ pos = "emp" }) => {
     const handleFetch = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3005/${data.data?.user?.profile_picture}`
+          `http://localhost:1813/${data.data?.user?.profile_picture}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");

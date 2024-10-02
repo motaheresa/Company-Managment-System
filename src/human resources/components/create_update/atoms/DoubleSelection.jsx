@@ -66,7 +66,7 @@ const DoubleSelection = ({
   useEffect(() => {
     const getData = async () => {
       await axios
-        .get(`http://localhost:3005/lookUp/${propertyOrig}`)
+        .get(`http://localhost:1813/lookUp/${propertyOrig}`)
         .then((res) => {
           setData(res.data.data);
         });
@@ -78,7 +78,7 @@ const DoubleSelection = ({
   useEffect(() => {
     const getData = async () => {
       await axios
-        .get(`http://localhost:3005/lookUp/${property2}`)
+        .get(`http://localhost:1813/lookUp/${property2}`)
         .then((res) => setData2(res.data.data))
         .catch((err) => console.log(err));
     };

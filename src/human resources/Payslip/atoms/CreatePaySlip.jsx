@@ -64,7 +64,7 @@ const CreatePaySlip = ({ isAppeared, handleAppearance, data, setData }) => {
     console.log(getParams());
 
     axios
-      .post(`http://localhost:3005/pay-slip?${getParams()}`, sentData, apiAuth(token))
+      .post(`http://localhost:1813/pay-slip?${getParams()}`, sentData, apiAuth(token))
       .then((response) => {
         if (data) {
           const addedData = response.data.data;

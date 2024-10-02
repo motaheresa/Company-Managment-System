@@ -78,7 +78,7 @@ const Form = ({
     setParams(handleParams());
     event.preventDefault();
     axios
-      .get(`http://localhost:3005/hr/leaves?${handleParams()}`, apiAuth(token))
+      .get(`http://localhost:1813/hr/leaves?${handleParams()}`, apiAuth(token))
       .then((res) => {
         if (res.data.data.leaves.length > 30) {
           setPages(Math.ceil(res.data.data.leaves.length / 30));

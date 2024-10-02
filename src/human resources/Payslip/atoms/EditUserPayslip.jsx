@@ -39,7 +39,7 @@ export const EditUser = ({
       getPostiveKeys(formData);
       axios
         .patch(
-          `http://localhost:3005/pay-slip/${Id_For_Edited}?${params()}`,
+          `http://localhost:1813/pay-slip/${Id_For_Edited}?${params()}`,
           formData,
           apiAuth(token)
         )

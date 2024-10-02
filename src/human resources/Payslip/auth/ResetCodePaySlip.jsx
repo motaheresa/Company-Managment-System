@@ -18,7 +18,7 @@ const ResetCodePaySlip = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3005/hr/reset-password",formData, apiAuth(token))
+      .post("http://localhost:1813/hr/reset-password",formData, apiAuth(token))
       .then((res) => {
         console.log(res.data);
         setStatus("Success");

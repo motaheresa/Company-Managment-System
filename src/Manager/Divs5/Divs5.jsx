@@ -31,7 +31,7 @@ const Divs5 = () => {
 
   useEffect(() => {
     usecon.firstLoginFunc();
-    const url="http://localhost:3005/dashboard/userDetails"
+    const url="http://localhost:1813/dashboard/userDetails"
     fetch(url, apiAuth(token)).then((jso) =>
       jso.json().then((res) => {
         setName(res.user.empName)

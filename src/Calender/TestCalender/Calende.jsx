@@ -9,7 +9,7 @@ const Calende = () => {
     const token = localStorage.getItem("token")
 
     async function gh() {
-        await axios.get("http://localhost:3005/dashboard/getAllEvent", {
+        await axios.get("http://localhost:1813/dashboard/getAllEvent", {
             headers: {
                 Accept: "Application/json",
                 Authorization: "Bearer " + token
@@ -31,7 +31,7 @@ const Calende = () => {
     }
     useEffect(() => {
         gh()
-        axios.get("http://localhost:3005/dashboard/yearHolidays", {
+        axios.get("http://localhost:1813/dashboard/yearHolidays", {
             headers: {
                 Accept: "Application/json",
                 Authorization: "Bearer " + token

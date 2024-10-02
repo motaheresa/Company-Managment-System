@@ -31,7 +31,7 @@ const SyncAttendance = () => {
     e.preventDefault();
     axios
       .put(
-        `http://localhost:3005/user/${params.userId}`,
+        `http://localhost:1813/user/${params.userId}`,
         {
           ...formData,
           from: new Date(formData.from).toISOString(),

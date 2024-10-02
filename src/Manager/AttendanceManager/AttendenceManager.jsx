@@ -125,7 +125,7 @@ const AttendenceManager = () => {
           return "";
         }
       };
-      const url = "http://localhost:3005/me/my-attendance?";
+      const url = "http://localhost:1813/me/my-attendance?";
       axios
         .get(
           `${url}${FromSearch()}${ToSearch()}${dayTypeSearch()}${statusSearch()} 
@@ -155,7 +155,7 @@ const AttendenceManager = () => {
   };
 
   async function aa() {
-    const url = "http://localhost:3005/dashboard/userDetails";
+    const url = "http://localhost:1813/dashboard/userDetails";
     await fetch(url, apiAuth(token)).then((jso) =>
       jso.json().then((res) => {
         const seconds = new Date(res.user.shift_start).getTime();
@@ -178,7 +178,7 @@ const AttendenceManager = () => {
       await setLateCounters(data.data.counters.late);
       await setEarlyCounters(data.data.counters.early);
     };
-    const url2 = `http://localhost:3005/me/my-attendance`;
+    const url2 = `http://localhost:1813/me/my-attendance`;
     await fetch(url2, apiAuth(token))
       .then((res) => res.json().then((res) => handleAtt(res)))
       .catch((err) => {
@@ -204,7 +204,7 @@ const AttendenceManager = () => {
         }
       });
     };
-    const url3 = `http://localhost:3005/me/my-leaves`;
+    const url3 = `http://localhost:1813/me/my-leaves`;
     await fetch(url3, apiAuth(token))
       .then((res) =>
         res.json().then((data) => {

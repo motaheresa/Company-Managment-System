@@ -138,7 +138,7 @@ const EmployeeAttendanceManager = () => {
         params.append("endDate", usecon.FilterEmployeeAtt.To);
       }
       setAccept(true);
-      const url = "http://localhost:3005/manager/attendance?";
+      const url = "http://localhost:1813/manager/attendance?";
       axios
         .get(url, {
           // `${url}${checkUserId()}${checkName()}${checkPermission()}${checkStatus()}${checkDayType()}${checkFrom()}${checkTo()}`,
@@ -183,7 +183,7 @@ const EmployeeAttendanceManager = () => {
   };
   useEffect(() => {
     usecon.setEmployeeDetailsManager([]);
-    const url = "http://localhost:3005/manager/employees";
+    const url = "http://localhost:1813/manager/employees";
     axios.get(url, apiAuth(token)).then((res) => {
       res.data.data.employees.map((emp) => {
         res.data.data.shifts.map((shift) => {
@@ -205,7 +205,7 @@ const EmployeeAttendanceManager = () => {
   useEffect(() => {
     setids([]);
     setnames([]);
-    const url = "http://localhost:3005/manager/attendance";
+    const url = "http://localhost:1813/manager/attendance";
     axios.get(url, apiAuth(token)).then((res) => {
       console.log(res.data);
       let result = 0;
@@ -256,7 +256,7 @@ const EmployeeAttendanceManager = () => {
         }
       });
     };
-    const url2 = `http://localhost:3005/me/my-leaves`;
+    const url2 = `http://localhost:1813/me/my-leaves`;
     fetch(url2, apiAuth(token))
       .then((res) =>
         res.json().then((data) => {

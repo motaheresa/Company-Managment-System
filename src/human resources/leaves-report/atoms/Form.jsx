@@ -76,7 +76,7 @@ const Form = ({
     event.preventDefault();
     axios
       .get(
-        `http://localhost:3005/hr/all-leave-types?${handleParams()}`,
+        `http://localhost:1813/hr/all-leave-types?${handleParams()}`,
         apiAuth(token)
       )
       .then((res) => {

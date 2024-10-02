@@ -23,7 +23,7 @@ const Dasboardgraph = () => {
   const token = localStorage.getItem("token");
   useEffect(() => {
     axios
-      .get("http://localhost:3005/dashboard/yearHolidays", apiAuth(token))
+      .get("http://localhost:1813/dashboard/yearHolidays", apiAuth(token))
       .then((res) => {
         res.data.holidays.map((holi) => {
           console.log(new Date(holi.date_holy))

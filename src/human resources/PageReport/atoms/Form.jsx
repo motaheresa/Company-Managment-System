@@ -73,7 +73,7 @@ const Form = ({
     event.preventDefault();
     axios
       .get(
-        `http://localhost:3005/page-report/${url}?${handleParams()}`,
+        `http://localhost:1813/page-report/${url}?${handleParams()}`,
         apiAuth(token)
       )
       .then((res) => {

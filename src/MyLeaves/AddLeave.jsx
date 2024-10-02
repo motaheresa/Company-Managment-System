@@ -49,7 +49,7 @@ const AddLeave = ({
     formData = cleanFormData();
 
     axios
-      .post("http://localhost:3005/me/apply-leave", formData, apiAuth(token))
+      .post("http://localhost:1813/me/apply-leave", formData, apiAuth(token))
       .then((res) => {
         setStatusAplly("Success");
         handleApplied(
@@ -131,7 +131,7 @@ const AddLeave = ({
       try {
         // /dashboard/applyLeave
         const response = await fetch(
-          `http://localhost:3005/${formData.leaveType == "Sick Leave"
+          `http://localhost:1813/${formData.leaveType == "Sick Leave"
             ? "dashboard/addLeaveSick"
             : "me/apply-leave"
           }`,

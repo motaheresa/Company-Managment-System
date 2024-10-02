@@ -175,7 +175,7 @@ const Content = ({ updatedValues, setUpdatedValues, handleExit }) => {
       delete updatedValues.avatar;
     }
     await axios
-      .post(`http://localhost:3005/user/`, updatedValues, apiAuth(token))
+      .post(`http://localhost:1813/user/`, updatedValues, apiAuth(token))
       .then((res) => {
         setAlert("Success");
         for (const index in formData) {
@@ -200,7 +200,7 @@ const Content = ({ updatedValues, setUpdatedValues, handleExit }) => {
     const formData = new FormData();
     formData.append("avatar", avatar);
     await axios
-      .patch(`http://localhost:3005/user/update-avatar/${id}`, formData, {
+      .patch(`http://localhost:1813/user/update-avatar/${id}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: "Bearer " + token,

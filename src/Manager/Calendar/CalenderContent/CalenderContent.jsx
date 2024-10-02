@@ -12,7 +12,7 @@ const CalenderContent = () => {
     const closeCalenderAddTask = () => {
         setOpen(false)
     }
-    axios.get("http://localhost:3005/dashboard/getAllEvent", {
+    axios.get("http://localhost:1813/dashboard/getAllEvent", {
         headers: {
             Accept: "Application/json",
             Authorization: "Bearer " + token

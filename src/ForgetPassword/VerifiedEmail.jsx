@@ -28,7 +28,7 @@ const VerifiedEmail = () => {
     }, [])
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3005/auth/verifyResetCode", {
+        axios.post("http://localhost:1813/auth/verifyResetCode", {
             email: usecon.email,
             resetCode: usecon.codeVerify.trimStart()
         }).then((res) => {

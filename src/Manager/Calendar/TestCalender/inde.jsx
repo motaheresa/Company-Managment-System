@@ -65,7 +65,7 @@ export const TestCalender = ({ startingDate, eventsArr }) => {
   const deleteLeave = (data, id) => {
     if (data.id == id) {
       axios
-        .delete("http://localhost:3005/dashboard/deleteEvent/" + id, {
+        .delete("http://localhost:1813/dashboard/deleteEvent/" + id, {
           headers: {
             Accept: "Application/json",
             Authorization: "Bearer " + token,

@@ -10,7 +10,7 @@ const DivsCondition = () => {
   const [jobPost,setJobPost]=useState("")
   const token = localStorage.getItem("token");
   useEffect(() => {
-    fetch("http://localhost:3005/dashboard/userDetails", {
+    fetch("http://localhost:1813/dashboard/userDetails", {
       headers: {
         Accept: "Application/json",
         Authorization: "Bearer " + token,

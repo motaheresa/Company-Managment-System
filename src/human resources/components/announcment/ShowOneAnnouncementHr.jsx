@@ -8,7 +8,7 @@ const ShowOneAnnouncementHr = ({ setIsOneAnnouncementAppeared, id }) => {
   useEffect(() => {
     const getData = () => {
       axios
-        .get(`http://localhost:3005/announcement/${id && id}`)
+        .get(`http://localhost:1813/announcement/${id && id}`)
         .then((res) => {
           Object.keys(res.data.data).map((oneData, index) => {
             if (oneData === "start_date") {

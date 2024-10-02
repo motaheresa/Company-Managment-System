@@ -89,7 +89,7 @@ const Form = ({
     setParams(handleParams());
     axios
       .post(
-        `http://localhost:3005/pay-slip/get-all?${handleParams()}`,
+        `http://localhost:1813/pay-slip/get-all?${handleParams()}`,
         { password },
         apiAuth(token)
       )

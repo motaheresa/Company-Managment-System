@@ -201,7 +201,7 @@ const Content = ({ emp_data, id, isEditable, setIsEditable, handleExit }) => {
     console.log("updatedValues= ", updatedValues);
     await axios
       .patch(
-        `http://localhost:3005/user/${emp_data.emp_no}`,
+        `http://localhost:1813/user/${emp_data.emp_no}`,
         updatedValues,
         apiAuth(token)
       )
@@ -219,7 +219,7 @@ const Content = ({ emp_data, id, isEditable, setIsEditable, handleExit }) => {
     const handleFetch = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3005/${emp_data.emp_picture}`
+          `http://localhost:1813/${emp_data.emp_picture}`
         );
         if (!response.ok) {
           setAlert("Fail");
@@ -242,7 +242,7 @@ const Content = ({ emp_data, id, isEditable, setIsEditable, handleExit }) => {
     formData.append("avatar", avatar);
     await axios
       .patch(
-        `http://localhost:3005/user/update-avatar/${emp_data.emp_no}`,
+        `http://localhost:1813/user/update-avatar/${emp_data.emp_no}`,
         formData,
         {
           headers: {
@@ -270,7 +270,7 @@ const Content = ({ emp_data, id, isEditable, setIsEditable, handleExit }) => {
     const date = new Date().toISOString().split("T")[0];
     axios
       .patch(
-        `http://localhost:3005/user/terminate-user/${id}`,
+        `http://localhost:1813/user/terminate-user/${id}`,
         { emp_term_dt: date },
         apiAuth(token)
       )
@@ -282,7 +282,7 @@ const Content = ({ emp_data, id, isEditable, setIsEditable, handleExit }) => {
       if (alert) {
         const date = new Date().toISOString().split("T")[0];
         axios
-          .delete(`http://localhost:3005/user/${id}`, apiAuth(token))
+          .delete(`http://localhost:1813/user/${id}`, apiAuth(token))
           .then((res) => setAlert("Successfully Deleted"))
           .catch((err) => setAlert("Error,Something went wrong"));
       }

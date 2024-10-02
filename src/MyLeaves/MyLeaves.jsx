@@ -91,7 +91,7 @@ const MyLeaves = ({ pos }) => {
   };
   const getData = (type) => {
     axios
-      .get("http://localhost:3005/me/my-leaves", apiAuth(token))
+      .get("http://localhost:1813/me/my-leaves", apiAuth(token))
       .then((res) => handleResponse(res.data, type));
   };
   useEffect(() => {
@@ -125,7 +125,7 @@ const MyLeaves = ({ pos }) => {
   const deleteLeave = () => {
     axios
       .delete(
-        "http://localhost:3005/dashboard/deleteLeave/" + id,
+        "http://localhost:1813/dashboard/deleteLeave/" + id,
         apiAuth(token)
       )
       .then(() => {

@@ -78,7 +78,7 @@ const Attendence = () => {
     } else {
       axios
         .get(
-          `http://localhost:3005/me/my-attendance?${
+          `http://localhost:1813/me/my-attendance?${
             usecon.START_ATTENDANCE != "" &&
             "startDate=" + usecon.START_ATTENDANCE
           }${
@@ -126,7 +126,7 @@ const Attendence = () => {
       setLateCounters(data.data.counters.late);
       setEarlyCounters(data.data.counters.early);
     };
-    await fetch(`http://localhost:3005/me/my-attendance`, apiAuth(token))
+    await fetch(`http://localhost:1813/me/my-attendance`, apiAuth(token))
       .then((res) => res.json().then((res) => handleAtt(res)))
       .catch((err) => {
         console.log(err);
@@ -142,7 +142,7 @@ const Attendence = () => {
         }
       });
     };
-    await fetch(`http://localhost:3005/me/my-leaves`, apiAuth(token))
+    await fetch(`http://localhost:1813/me/my-leaves`, apiAuth(token))
       .then((res) =>
         res.json().then((data) => {
           js(data);

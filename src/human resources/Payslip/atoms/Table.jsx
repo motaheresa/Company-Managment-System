@@ -271,7 +271,7 @@ const Table = ({
 
     setLoading(true);
     axios
-      .delete(`http://localhost:3005/pay-slip/${id}`, apiAuth(token))
+      .delete(`http://localhost:1813/pay-slip/${id}`, apiAuth(token))
       .then((res) => {
         setStatus("Success");
         setData(() => data.filter((ele) => ele.id !== id));

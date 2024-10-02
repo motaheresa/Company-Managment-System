@@ -49,7 +49,7 @@ const CreatePasswordAfterLogin = () => {
             setErrorLogin("")
         }
         if (flag && errorLogin == "") {
-            axios.post("http://localhost:3005/auth/setPassword", {
+            axios.post("http://localhost:1813/auth/setPassword", {
                 newPassword: newPassword,
                 userId: usecon.userId,
                 confirmPassword: confirmPassword

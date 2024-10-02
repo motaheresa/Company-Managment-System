@@ -53,7 +53,7 @@ const LeaveReportManager = () => {
       setError("Incorrect Data");
     } else {
       setAccept(true);
-      const url = "http://localhost:3005/manager/all-leave-types?";
+      const url = "http://localhost:1813/manager/all-leave-types?";
       axios
         .get(
           `${url}${
@@ -85,7 +85,7 @@ const LeaveReportManager = () => {
   };
   useEffect(() => {
     usecon.setEmployeeDetailsManager([]);
-    const url = "http://localhost:3005/manager/employees";
+    const url = "http://localhost:1813/manager/employees";
     axios.get(url, apiAuth(token)).then((res) => {
       res.data.data.employees.map((emp) => {
         res.data.data.shifts.map((shift) => {
@@ -105,7 +105,7 @@ const LeaveReportManager = () => {
     });
   }, []);
   useEffect(() => {
-    const url = "http://localhost:3005/manager/all-leave-types";
+    const url = "http://localhost:1813/manager/all-leave-types";
     axios.get(url, apiAuth(token)).then((res) => {
       usecon.setAllLeaveReportFilter(res.data.data);
       filterFunc(res.data.data);

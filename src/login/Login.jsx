@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     setAccept(true);
     await axios
-      .post("http://localhost:3005/auth/check-login", {
+      .post("http://localhost:1813/auth/check-login", {
         userId: usecon.userId,
       })
       .then((res) => {
@@ -43,7 +43,7 @@ const Login = () => {
       });
     if (checkLogin == true) {
       await axios
-        .post(`http://localhost:3005/auth/login?type=${usecon.loginType}`, {
+        .post(`http://localhost:1813/auth/login?type=${usecon.loginType}`, {
           userId: usecon.userId,
           password: password,
         })
@@ -75,7 +75,7 @@ const Login = () => {
         });
     } else {
       axios
-        .post("http://localhost:3005/auth/firstLogin", {
+        .post("http://localhost:1813/auth/firstLogin", {
           userId: usecon.userId,
           password: password,
         })

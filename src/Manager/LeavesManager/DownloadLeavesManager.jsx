@@ -38,7 +38,7 @@ const DownloadLeavesManager = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:3005/me/my-leaves?${
+        `http://localhost:1813/me/my-leaves?${
           usecon.fromLeaveFilter != "" && "startDate=" + usecon.fromLeaveFilter
         }${usecon.toLeaveFilter != "" && "&endDate=" + usecon.toLeaveFilter}${
           usecon.FilterLeaveByType && "&leaveType=" + usecon.FilterLeaveByType
@@ -61,7 +61,7 @@ const DownloadLeavesManager = () => {
         console.log(err);
       });
       axios
-      .get("http://localhost:3005/dashboard/userDetails", {
+      .get("http://localhost:1813/dashboard/userDetails", {
         headers: {
           Accept: "Application/json",
           Authorization: "Bearer " + token,

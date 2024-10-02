@@ -185,7 +185,7 @@ const Context = ({ children }) => {
     const [socket, setSocket] = useState(null);
   useEffect(() => {
     const callSocket = () => {
-      const socket2 = io(`http://localhost:3005`, {
+      const socket2 = io(`http://localhost:1813`, {
         query:{
           Authorization: "Bearer " + token && token,
 

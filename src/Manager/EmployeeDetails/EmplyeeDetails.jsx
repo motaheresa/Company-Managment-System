@@ -27,7 +27,7 @@ const EmplyeeDetails = () => {
   const [t, i18n] = useTranslation();
   useEffect(() => {
     usecon.setEmployeeDetailsManager([])
-    const url="http://localhost:3005/manager/employees"
+    const url="http://localhost:1813/manager/employees"
     axios
       .get(url, apiAuth(token))
       .then((res) => {

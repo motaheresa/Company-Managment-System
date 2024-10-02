@@ -12,7 +12,7 @@ const MainPage = () => {
      
     useEffect(() => {
         usecon.SET_CHECK_IF_LOGIN(true)
-        axios.get("http://localhost:3005/dashboard/userDetails", {
+        axios.get("http://localhost:1813/dashboard/userDetails", {
             headers: {
                 Accept: "Application/json",
                 Authorization: "Bearer " + token

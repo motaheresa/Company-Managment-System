@@ -69,7 +69,7 @@ const AddLeaveManager = (Funcs) => {
     };
 
     //                  شهري
-    await fetch("http://localhost:3005/me/my-leaves", {
+    await fetch("http://localhost:1813/me/my-leaves", {
       headers: {
         Accept: "Application/json",
         Authorization: "Bearer " + token,
@@ -82,7 +82,7 @@ const AddLeaveManager = (Funcs) => {
   useEffect(() => {
     aa();
     axios
-      .get("http://localhost:3005/dashboard/userDetails", {
+      .get("http://localhost:1813/dashboard/userDetails", {
         headers: {
           Accept: "Application/json",
           Authorization: "Bearer " + token,
@@ -144,7 +144,7 @@ const AddLeaveManager = (Funcs) => {
       setCheckMarriageLeave("");
       axios
         .post(
-          "http://localhost:3005/dashboard/applyLeave",
+          "http://localhost:1813/dashboard/applyLeave",
           {
             leaveType,
             from: from,
@@ -244,7 +244,7 @@ const AddLeaveManager = (Funcs) => {
       formData.append("numDays", numDays);
     try{
       const response=await fetch(
-        "http://localhost:3005/dashboard/addLeaveSick",
+        "http://localhost:1813/dashboard/addLeaveSick",
         {
           method:'POST',
           headers: {

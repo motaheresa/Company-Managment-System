@@ -14,7 +14,7 @@ const UpcomingRequests = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    const url="http://localhost:3005/manager/leaves"
+    const url="http://localhost:1813/manager/leaves"
     axios
       .get(url, apiAuth(token))
       .then((res) => {
@@ -36,7 +36,7 @@ const UpcomingRequests = () => {
   ];
   const test = () => {
     setUsers([]);
-    const url="http://localhost:3005/manager/leaves"
+    const url="http://localhost:1813/manager/leaves"
     axios
       .get(url, apiAuth(token))
       .then((res) => {
@@ -48,7 +48,7 @@ const UpcomingRequests = () => {
       });
   };
   const handleReject = async (id) => {
-    fetch(`http://localhost:3005/manager/leaves/${id}/reject`, {
+    fetch(`http://localhost:1813/manager/leaves/${id}/reject`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const UpcomingRequests = () => {
       });
   };
   const handleApprove = async (id) => {
-    fetch(`http://localhost:3005/manager/leaves/${id}/approve`, {
+    fetch(`http://localhost:1813/manager/leaves/${id}/approve`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

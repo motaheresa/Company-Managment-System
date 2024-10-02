@@ -23,7 +23,7 @@ const ResetPasword = () => {
     const token = localStorage.getItem("token")
     const navigate = useNavigate()
     useEffect(() => {
-        axios.get("http://localhost:3005/dashboard/userDetails", {
+        axios.get("http://localhost:1813/dashboard/userDetails", {
             headers: {
                 Accept: "Application/json",
                 Authorization: "Bearer " + token,
@@ -41,7 +41,7 @@ const ResetPasword = () => {
             }, 7000)
         } else {
             setAccept(false)
-            axios.patch("http://localhost:3005/auth/changePassword", {
+            axios.patch("http://localhost:1813/auth/changePassword", {
                 changedPass,
                 con_pass,
                 currentPass,

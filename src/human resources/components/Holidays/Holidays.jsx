@@ -18,7 +18,7 @@ const Holidays = () => {
   }
   useEffect(() => {
       axios
-      .get("http://localhost:3005/dashboard/yearHolidays", apiAuth(token))
+      .get("http://localhost:1813/dashboard/yearHolidays", apiAuth(token))
       .then((res) => {
         const holidays = res.data.holidays.filter((holiday) => {
           if (new Date() < new Date(holiday.date_holy)) {

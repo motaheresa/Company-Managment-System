@@ -38,7 +38,7 @@ const CreateNewPassword = () => {
             setError("invalid password")
         } else {
             setError("")
-            axios.post("http://localhost:3005/auth/resetPassword", {
+            axios.post("http://localhost:1813/auth/resetPassword", {
                 email: usecon.email,
                 newPassword: newPassword
             }).then((res) => {

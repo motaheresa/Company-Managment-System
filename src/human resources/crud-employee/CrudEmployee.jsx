@@ -37,7 +37,7 @@ const CrudEmployee = () => {
   useEffect(() => {
     const fetchData = async () => {
       const companiesResponse = await axios.get(
-        "http://localhost:3005/lookUp/company",
+        "http://localhost:1813/lookUp/company",
         apiAuth(token)
       );
       const companiesData = await companiesResponse.data.data;
@@ -52,7 +52,7 @@ const CrudEmployee = () => {
   useEffect(() => {
     const fetchData = async () => {
       const branchesResponse = await axios.get(
-        `http://localhost:3005/lookUp/branch?company_code=${company}`,
+        `http://localhost:1813/lookUp/branch?company_code=${company}`,
         apiAuth(token)
       );
       const branchesData = await branchesResponse.data.data;
@@ -79,7 +79,7 @@ const CrudEmployee = () => {
           ? "terminated=false"
           : "none";
       const users = await axios.get(
-        `http://localhost:3005/user?${companyValidate && companyValidate}${
+        `http://localhost:1813/user?${companyValidate && companyValidate}${
           branchValidate && branchValidate
         }${siteValidate && siteValidate}${sectorValidate && sectorValidate}${
           isTerminatedValidate !== "none" ? isTerminatedValidate : ""
@@ -104,13 +104,13 @@ const CrudEmployee = () => {
       const branchValidate = branch !== "" ? `branch_code=${branch}` : "";
       const [sites, sectors] = await Promise.all([
         axios.get(
-          `http://localhost:3005/lookUp/site?${
+          `http://localhost:1813/lookUp/site?${
             companyValidate && companyValidate
           }${branchValidate && branchValidate}`,
           apiAuth(token)
         ),
         axios.get(
-          `http://localhost:3005/lookUp/sector?${
+          `http://localhost:1813/lookUp/sector?${
             companyValidate && companyValidate
           }${branchValidate && branchValidate}`,
           apiAuth(token)
@@ -135,7 +135,7 @@ const CrudEmployee = () => {
     e.preventDefault();
     if (name !== "") {
       await axios
-        .get(`http://localhost:3005/user/${id}`, apiAuth(token))
+        .get(`http://localhost:1813/user/${id}`, apiAuth(token))
         .then((response) => {
           setEmpData(response.data.data);
           setIsShowenUpdate(true);

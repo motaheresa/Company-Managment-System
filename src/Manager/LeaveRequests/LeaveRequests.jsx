@@ -69,7 +69,7 @@ const LeaveRequests = () => {
       setAccept(true);
       axios
         .get(
-          `http://localhost:3005/manager/leaves?${checkFrom()}${checkTo()}${checkName()}${checkDayType()}${checkStatus()}${checkUserId()}`,
+          `http://localhost:1813/manager/leaves?${checkFrom()}${checkTo()}${checkName()}${checkDayType()}${checkStatus()}${checkUserId()}`,
           {
             headers: {
               Accept: "Application/json",
@@ -132,7 +132,7 @@ const LeaveRequests = () => {
   useEffect(() => {
     
     axios
-      .get("http://localhost:3005/manager/leaves", {
+      .get("http://localhost:1813/manager/leaves", {
         headers: {
           Accept: "Application/json",
           Authorization: "Bearer " + token,
@@ -146,7 +146,7 @@ const LeaveRequests = () => {
   }, []);
   useEffect(() => {
     usecon.setEmployeeDetailsManager([])
-    const url="http://localhost:3005/manager/employees"
+    const url="http://localhost:1813/manager/employees"
     axios
       .get(url, apiAuth(token))
       .then((res) => {
@@ -222,7 +222,7 @@ const LeaveRequests = () => {
   };
   const test = () => {
     axios
-      .get("http://localhost:3005/manager/leaves", {
+      .get("http://localhost:1813/manager/leaves", {
         headers: {
           Accept: "Application/json",
           Authorization: "Bearer " + token,
@@ -234,7 +234,7 @@ const LeaveRequests = () => {
       });
   };
   const handleReject = async (id) => {
-    fetch(`http://localhost:3005/manager/leaves/${id}/reject`, {
+    fetch(`http://localhost:1813/manager/leaves/${id}/reject`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -259,7 +259,7 @@ const LeaveRequests = () => {
       });
   };
   const handleApprove = async (id) => {
-    fetch(`http://localhost:3005/manager/leaves/${id}/approve`, {
+    fetch(`http://localhost:1813/manager/leaves/${id}/approve`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

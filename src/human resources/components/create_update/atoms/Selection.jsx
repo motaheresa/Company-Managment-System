@@ -171,7 +171,7 @@ const Selection = ({
   useEffect(() => {
     const getData = async () => {
       await axios
-        .get(`http://localhost:3005/lookUp/${property}`)
+        .get(`http://localhost:1813/lookUp/${property}`)
         .then((res) => {
           setData(res.data.data);
         });

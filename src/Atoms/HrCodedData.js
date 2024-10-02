@@ -2,7 +2,7 @@ import apiAuth from "./apiAuth";
 export const HrCodedData = async () => {
     const token = localStorage.getItem("token")
 
-    const response = await fetch("http://localhost:3005/hr/coded", apiAuth(token));
+    const response = await fetch("http://localhost:1813/hr/coded", apiAuth(token));
     const data = await response.json();
     if (data.status == "Success") {
         return {
